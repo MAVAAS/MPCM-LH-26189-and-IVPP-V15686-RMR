@@ -1,0 +1,231 @@
+#NEXUS
+[written Thu Jan 30 12:51:48 CET 2025 by Mesquite  version 3.81 (build 955) at DESKTOP-OK3HT8N/169.254.221.163]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=19;
+	TAXLABELS
+		'Struthio_camelus' 'Callipepla_californica' 'Meleagris_gallopavo' 'Larus_occidentalis' 'Falco_sparverius' 'Pyrrhura_molinae' 'Aphelocoma_californica' 'Haemorhous_mexicanus' 'Dromaius_novaehollandiae' 'Enantiornithes_MPCM_LH_26189' 'Enantiornithes_IVPP_V_15686' 'Ficedula_albicollis' 'Phasianus_colchicus' 'Anas_platyrhynchos' 'Turdus_merula' 'Gallus_gallus' 'Aptenodytes_patagonicus' 'Alectoris_sp' 'Coturnix_coturnix' 
+	;
+
+END;
+
+
+BEGIN TREES;
+	Title 'Trees from "untitled2.trees.trees.trees.nex"';
+	ID 0194b70d3a725;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 'Struthio_camelus',
+[1] 		2 'Callipepla_californica',
+[2] 		3 'Meleagris_gallopavo',
+[3] 		4 'Larus_occidentalis',
+[4] 		5 'Falco_sparverius',
+[5] 		6 'Pyrrhura_molinae',
+[6] 		7 'Aphelocoma_californica',
+[7] 		8 'Haemorhous_mexicanus',
+[8] 		9 'Dromaius_novaehollandiae',
+[9] 		10 'Enantiornithes_MPCM_LH_26189',
+[10] 		11 'Enantiornithes_IVPP_V_15686',
+[11] 		12 'Ficedula_albicollis',
+[12] 		13 'Phasianus_colchicus',
+[13] 		14 'Anas_platyrhynchos',
+[14] 		15 'Turdus_merula',
+[15] 		16 'Gallus_gallus',
+[16] 		17 'Aptenodytes_patagonicus',
+[17] 		18 'Alectoris_sp',
+[18] 		19 'Coturnix_coturnix';
+	TREE 'Default symmetrical+' = (((((((((12:22.1,15:22.1):13.9,8:36.0):1.0,7:37.0):31.0,6:68.0):1.0,5:69.0):3.0,(4:71.0,17:71.0):1.0):19.0,(((((13:29.6,3:29.6):3.4,16:33.0):6.0,(19:29.5,18:29.5):9.5):1.0,2:40.0):37.0,14:77.0):14.0):17.0,(9:64.0,1:64.0):44.0):44.0,(11:31.0,10:30.0):1.0):1.0;
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1738237908615;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1572557079564380127;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1920 930;
+			setLocation -9 -9;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #1572557079564380127 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #1572557079564380127;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1820 858;
+					setLocation -9 -9;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #1572557079564380127  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0194b70d3a725;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1587.1738237888832.3857596246730029427;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1820 858;
+					setLocation -9 -9;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle on;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
